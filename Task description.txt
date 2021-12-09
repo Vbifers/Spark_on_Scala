@@ -1,0 +1,29 @@
+Входные данные:
+Customer.csv – информация о клиентах
+id: Int,
+name: String,
+email: String,
+joinDate: Date,
+status: String
+
+Product.csv – информация о товарах
+id: Int
+name: String 
+price: Double 
+numberOfProducts: Int
+
+Order.csv – информация о заказах
+customerID: Int
+orderID: Int
+productID: Int
+numberOfProduct: Int – кол-во товара в заказе
+orderDate: Date
+status: String
+
+Приложение должно выполнять следующие действия:
+1.Чтение входных данных
+2.Определение самого популярного продукта для каждого клиента (итоговое множество содержит поля: customer.name, product.name)
+3.Запись результата в файл csv
+
+Пути к файлам-источникам и файлу с результатом должны быть параметризованы либо файлы должны находиться внутри проекта в папке resources.
+При помощи плагина sbt-assembly должен создаваться fat jar проекта.
